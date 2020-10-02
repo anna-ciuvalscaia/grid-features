@@ -1,0 +1,140 @@
+body, ul {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  color: #777;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+#features {
+  background-color: #f7f7f7;
+  margin-top: 100px;
+}
+
+#features header {
+  padding-top: 70px;
+  text-align: center;
+}
+
+#features h1 {
+  color: #444;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#features h2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#features h3 {
+  font-size: 18px;
+  color: #444;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+#features p {
+  margin-top: 0;
+}
+
+#features ul {
+  width: 1100px;
+  margin: 50px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+  -webkit-column-gap: 100px;
+          column-gap: 100px;
+}
+
+#features ul li a .icon {
+  width: 30px;
+  position: relative;
+  border-radius: 100%;
+  padding: 5px;
+}
+
+#features ul li a .icon:hover {
+  background-color: #005BEA;
+}
+
+#features ul li:nth-child(even) a .icon {
+  left: -50px;
+}
+
+#features ul li:nth-child(odd) {
+  text-align: right;
+}
+
+#features ul li:nth-child(odd) a .icon {
+  left: 50px;
+}
+
+#features ul li:last-child {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / 4;
+  text-align: center;
+}
+
+#features ul li:last-child img {
+  width: 100%;
+  position: relative;
+  -webkit-animation-name: mobile;
+          animation-name: mobile;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes mobile {
+  0% {
+    top: 8px;
+  }
+  25% {
+    top: 6px;
+  }
+  50% {
+    top: 4px;
+  }
+  75% {
+    top: 2px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes mobile {
+  0% {
+    top: 8px;
+  }
+  25% {
+    top: 6px;
+  }
+  50% {
+    top: 4px;
+  }
+  75% {
+    top: 2px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

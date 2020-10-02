@@ -1,0 +1,106 @@
+body, ul {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px; 
+    line-height: 23px;
+    color: #777;
+    margin: 0;
+    padding: 0;
+
+}
+ul {
+    list-style: none;
+}
+#features {
+    background-color: #f7f7f7;
+    margin-top: 100px;
+ header {
+     padding-top: 70px;
+        text-align: center;
+    }
+h1 {
+    color: #444;
+    font-size: 28px;
+    font-weight: 700;
+}
+h2 {
+    font-size: 16px;
+    font-weight: 400;
+}
+h3 {
+    font-size: 18px;
+    color: #444;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+p {
+    margin-top: 0;
+}
+ul {
+    width: 1100px;
+    margin: 50px auto;
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr ;
+    column-gap: 100px;
+
+li {
+a .icon {
+    width: 30px;
+    position: relative;
+    border-radius: 100%;
+    padding: 5px;
+    &:hover  {
+        background-color:#005BEA ;
+    }
+   }
+&:nth-child(even)  {
+    
+    a .icon {
+        left: -50px;
+    }
+    
+
+}
+&:nth-child(odd) {
+    text-align: right;
+    a .icon {
+      left: 50px;
+    }
+}
+&:last-child {
+    grid-column: 2; 
+    grid-row: 1 / 4;
+    text-align: center;
+  img {
+    width: 100%;
+    position: relative;
+    animation-name: mobile;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+
+} 
+@keyframes mobile {
+    0% {
+top: 8px;
+    }
+    25%{
+        top: 6px;
+    }
+    50% {
+        top: 4px;
+    }
+    75%{
+        top: 2px;
+    }
+    100% {
+        top: 0px;
+    }
+    
+} 
+}
+}
+
+}
+}
